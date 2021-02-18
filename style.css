@@ -4,6 +4,13 @@ main {
 }
 
 /* NAV ------------------------------------------------*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 /* Add background color to the top navigation */
 .topnav {
   overflow: hidden;
@@ -38,6 +45,15 @@ main {
   display: none;
 }
 
+/* Keep header fixed for mobile */
+@media screen and (max-width: 600px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
@@ -74,6 +90,15 @@ section {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  section {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    padding-top: none;
+    min-height: none;
+  }
+}
 /* section sizing */
 .sm-section {
   min-height: 33vh;
@@ -96,6 +121,10 @@ h2 {
 }
 
 /* SERVICES SECTION ---------------------*/
+#services-section {
+  padding-top: 80px;
+}
+
 /* img columns and rows */
 .imgRow {
   display: flex;
@@ -207,6 +236,12 @@ h2 {
   font-size: 18px;
 }
 
+/* Style green lines */
+.price-line {
+  background: green;
+  height: 5px;
+}
+
 /* Change the width of the six columns to 100%
 (to stack horizontally on small screens) */
 @media only screen and (max-width: 600px) {
@@ -214,11 +249,6 @@ h2 {
     width: 100%;
   }
 }
-.price-line {
-  background: green;
-  height: 5px;
-}
-
 /* FAQ SECTION --------------------------*/
 #faq-section {
   width: 75%;
@@ -266,6 +296,7 @@ h2 {
 }
 
 /* LEARN MORE SECTION --------------------*/
+/* Style consult button */
 .schedule-but {
   background-color: green;
   border: none;
@@ -276,6 +307,7 @@ h2 {
   font-size: 30px;
 }
 
+/* Style form container */
 .form-cont {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -285,6 +317,7 @@ h2 {
   text-align: left;
 }
 
+/* Style form fields */
 input[type=text], input[type=tel], select, textarea {
   width: 100%;
   padding: 12px;
@@ -296,6 +329,7 @@ input[type=text], input[type=tel], select, textarea {
   resize: vertical;
 }
 
+/* Style submit button */
 .form-but {
   background-color: green;
   border: none;
@@ -321,16 +355,28 @@ input[type=text], input[type=tel], select, textarea {
 
 .contact-links {
   height: auto;
-  width: 100%;
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.link-cont {
+  float: left;
+  width: 25%;
 }
 
 .contact-img {
-  height: 100px;
-  width: 100px;
-  padding: 25px;
+  height: 75px;
+  width: 75px;
 }
 
 #git-logo {
-  height: 100px;
-  width: 125px;
+  height: 75px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-links {
+    width: 100%;
+  }
 }
