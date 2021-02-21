@@ -1,6 +1,10 @@
 @charset "UTF-8";
-main {
-  text-align: center;
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 /* NAV ------------------------------------------------*/
@@ -84,6 +88,10 @@ header {
   }
 }
 /* MAIN -----------------------------------------------*/
+main {
+  text-align: center;
+}
+
 section {
   /* activate to view section dimensions
   background-color: purple;*/
