@@ -49,17 +49,16 @@ header {
   display: none;
 }
 
-/* Keep header fixed for mobile */
 @media screen and (max-width: 600px) {
+  /* Keep header fixed for mobile */
   header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
   }
-}
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one. Show the link that contains should open and close the topnav (.icon) */
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -68,9 +67,8 @@ header {
     float: right;
     display: block;
   }
-}
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav display the links vertically instead of horizontally. */
-@media screen and (max-width: 600px) {
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav display the links vertically instead of horizontally. */
   .topnav.responsive {
     position: relative;
   }
@@ -98,15 +96,6 @@ section {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 600px) {
-  section {
-    margin: auto;
-    height: auto;
-    width: 100%;
-    padding-top: none;
-    min-height: none;
-  }
-}
 /* section sizing */
 .sm-section {
   min-height: 33vh;
@@ -128,6 +117,15 @@ h2 {
   font-size: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  section {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    padding-top: none;
+    min-height: none;
+  }
+}
 /* SERVICES SECTION ---------------------*/
 #services-section {
   padding-top: 80px;
@@ -257,6 +255,11 @@ h2 {
     width: 100%;
   }
 }
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .priceColumns {
+    width: 33.3%;
+  }
+}
 /* FAQ SECTION --------------------------*/
 #faq-section {
   width: 75%;
@@ -384,6 +387,11 @@ input[type=text], input[type=tel], select, textarea {
 }
 
 @media only screen and (max-width: 600px) {
+  .contact-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
   .contact-links {
     width: 100%;
   }
