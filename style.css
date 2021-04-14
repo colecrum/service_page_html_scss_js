@@ -260,6 +260,11 @@ h2 {
     width: 33.3%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .priceColumns {
+    width: 33.3%;
+  }
+}
 /* FAQ SECTION --------------------------*/
 #faq-section {
   width: 75%;
@@ -392,6 +397,11 @@ input[type=text], input[type=tel], select, textarea {
   }
 }
 @media screen and (max-width: 800px) and (orientation: landscape) {
+  .contact-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
   .contact-links {
     width: 100%;
   }
